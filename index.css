@@ -1,0 +1,250 @@
+body {
+  background-image: url('./gl_bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 1.5em;
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: yellow;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+img {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.content {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content > h2 {
+  background-color: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 5em;
+  z-index: -1;
+  padding: 1em;
+}
+
+.header {
+  background-color: #056608;
+  display: inline-block;
+  font-size: 1em;
+  margin-bottom: 2.2em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 3.5em;
+  width: 100%;
+}
+
+.header>h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.navbar {
+  float: right;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  z-index: 1;
+}
+
+.navbar a {
+  background-color: #056608;
+  color: #660505;
+  display: none;
+  font-size: 1.5em;
+  text-align: left;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.navbar a:first-child {
+  display: block;
+}
+
+.navbar:hover>a {
+  display: block;
+  padding: 0.25em;
+  z-index: 1;
+}
+
+.navbar:hover>a:first-child {
+  padding: 0;
+}
+
+.navbar>a:hover {
+  background-color: #7BB661;
+  width: auto;
+}
+
+.lanternCard {
+  background-image: url("https://i.pinimg.com/474x/20/fe/d6/20fed66c2bb51531210bff6a560cf13b--grunge-texture.jpg");
+  background-size: 100% 100%;
+  border: 2px solid #056608;
+  border-radius: 5em;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 4em 0 4em;
+  margin: 2em 10em 2em 10em;
+}
+
+.lantern-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 1em;
+}
+
+.img-div > sub {
+  font-size: 0.75em;
+  text-align: center;
+}
+
+.intro-profile {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+}
+
+.intro-profile > img {
+  height: auto;
+  max-width: 10em;
+  border: 0.3em solid #D3FACB;
+  border-radius: 1em;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding: 1em;
+}
+
+#image {
+  /* Main image for intro */
+  border-radius: 1em;
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+#main {
+  height: 100%;
+  background-color: #000;
+  color: white;
+}
+
+#NavLogo {
+  height: 2.32em;
+  width: 2.32em;
+}
+
+#tribute-info {
+  background-color: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 5em;
+  z-index: -1;
+  padding: 1em;
+}
+
+#tribute-info > p {
+  padding: 3em;
+}
+
+#AlanScott {
+  background-color: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+  margin-top: 2em;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  body {
+    margin: 3em 0 0 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #tribute-info {
+    border-radius: 1em;
+  }
+
+  #tribute-info > p {
+    padding: 0;
+  }
+
+  .content > h2 {
+    border-radius: 1em;
+  }
+
+  .header > h1 {
+    max-width: 60%;
+    float: right;
+    font-size: 1em;
+  }
+
+  .content {
+    margin: 0;
+    padding: 1em;
+  }
+
+
+  .intro-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lanternCard {
+    background-image: none;
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    border: none;
+    z-index: -1;
+    padding: 1em 1em 0 1em;
+    margin: 0;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em
+  }
+
+}
